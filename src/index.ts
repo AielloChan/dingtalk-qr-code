@@ -1,7 +1,5 @@
 import qr from "./qr";
 
-export * from "./const";
-
 /**
  * 在给定的 ctx 中绘制二维码
  * @param ctx
