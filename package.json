@@ -1,0 +1,25 @@
+{
+  "name": "dingtalk-qr-code",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "bun run ./test/basic.ts",
+    "clean": "rimraf dist types",
+    "build": "npm run clean && esbuild ./src/index.ts --outfile=./dist/index.js && tsc"
+  },
+  "types": "./types",
+  "files": [
+    "types",
+    "dist"
+  ],
+  "author": "Aiello Chan<aiello.chan@gmail.com>",
+  "license": "MIT",
+  "description": "Generate DingTalk style qr code, for node.js/web worker/dom",
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.1.53",
+    "@types/node": "^20.14.2",
+    "esbuild": "^0.21.5",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.4.5"
+  }
+}
