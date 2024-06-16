@@ -1,11 +1,12 @@
 {
   "name": "dingtalk-qr-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "test": "bun run ./test/basic.ts",
     "clean": "rimraf dist types",
-    "build": "npm run clean && esbuild ./src/index.ts --outfile=./dist/index.js && tsc"
+    "build": "npm run clean && esbuild ./src/index.ts --outfile=./dist/index.js --bundle --minify --target=es2015 --format=esm && tsc"
   },
   "types": "./types",
   "files": [
