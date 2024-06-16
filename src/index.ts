@@ -1,5 +1,7 @@
 import qr from "./qr";
 
+export * from "./const";
+
 /**
  * 在给定的 ctx 中绘制二维码
  * @param ctx
@@ -15,7 +17,7 @@ export function generate(
    * 二维码的内容，通常为一个 url
    */
   text: string,
-  params: {
+  params?: {
     /**
      * 二维码中间显示的图像
      */
